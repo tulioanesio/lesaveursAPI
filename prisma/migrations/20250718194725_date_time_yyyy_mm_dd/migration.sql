@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Reserva" ALTER COLUMN "data" SET DATA TYPE DATE;

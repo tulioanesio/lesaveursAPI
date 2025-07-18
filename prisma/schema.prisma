@@ -12,7 +12,7 @@ model Reserva{
   nome String
   email String
   telefone String
-  data DateTime
+  data DateTime @db.Date
   mesa    Mesa    @relation(fields: [mesaId], references: [id])
   mesaId  Int
   createdAt DateTime @default(now())
