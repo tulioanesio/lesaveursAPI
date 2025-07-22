@@ -25,3 +25,10 @@ model Mesa{
   disponivel     Boolean  @default(true)
   reservas  Reserva[]
 }
+
+model Menu{
+  id Int @id @default(autoincrement())
+  nome String @unique
+  descricao String
+  imageUrl String
+}
