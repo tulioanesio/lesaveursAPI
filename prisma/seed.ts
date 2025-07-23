@@ -11,7 +11,8 @@ async function main() {
       { numero: 4, capacidade: 6 },
       { numero: 5, capacidade: 2 },
       { numero: 6, capacidade: 4 },
-      { numero: 7, capacidade: 8 },
+      { numero: 7, capacidade: 2 },
+      { numero: 8, capacidade: 2 },
     ],
     skipDuplicates: true,
   });
