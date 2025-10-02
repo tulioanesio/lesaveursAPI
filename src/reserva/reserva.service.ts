@@ -1,5 +1,5 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../prisma/prisma.service';
 import { CreateReservaDTO } from './dtos/create-reserva.dto';
 import { startOfDay } from 'date-fns'
 
@@ -9,7 +9,6 @@ export class ReservaService {
 
   async create(data: CreateReservaDTO) {
     const dataFormatada = startOfDay(new Date(data.data));
-
 
     const reservaExistente = await this.prisma.reserva.findFirst({
       where: {
